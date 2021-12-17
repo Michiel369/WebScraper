@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Threading;
-using System.Threading.Tasks;
-using OpenQA.Selenium.Interactions;
-using caseStudieWebScraper.Views;
 using caseStudieWebScraper.Models;
 using caseStudieWebScraper.DAL;
 

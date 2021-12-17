@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Dapper;
-using System.IO;
 using caseStudieWebScraper.Models;
 
 namespace caseStudieWebScraper.DAL

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using caseStudieWebScraper.Models;
 
 namespace caseStudieWebScraper.Views
@@ -11,7 +10,7 @@ namespace caseStudieWebScraper.Views
         {
             Console.Clear();
             Console.WriteLine();
-            Console.WriteLine("Youtube scraper results");
+            Console.WriteLine("Youtube scraper resultaat");
             Console.WriteLine("-------------------------------------------------------");
             Console.WriteLine();
             foreach (var video in YTVideos)

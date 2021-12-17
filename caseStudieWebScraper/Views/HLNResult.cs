@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using caseStudieWebScraper.Models;
 
 namespace caseStudieWebScraper.Views
@@ -26,7 +25,7 @@ namespace caseStudieWebScraper.Views
                 Console.WriteLine();
             }
 
-            Console.Write("Press enter to go back.");
+            Console.Write("Enter om terug te gaan.");
         }
     }
 }

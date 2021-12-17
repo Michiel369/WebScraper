@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Dapper;
+﻿using Dapper;
 using Microsoft.Data.Sqlite;
 using System.IO;
 

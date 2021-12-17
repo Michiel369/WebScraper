@@ -1,14 +1,7 @@
-﻿using System;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
-using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Support.UI;
-using caseStudieWebScraper.Views;
 using caseStudieWebScraper.Models;
 using caseStudieWebScraper.DAL;
 

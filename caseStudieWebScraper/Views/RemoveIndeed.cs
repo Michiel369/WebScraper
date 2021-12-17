@@ -1,7 +1,6 @@
 ﻿using caseStudieWebScraper.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace caseStudieWebScraper.Views
 {
@@ -10,7 +9,7 @@ namespace caseStudieWebScraper.Views
         public static void Print(IEnumerable<InD> InDeed)
         {
             Console.Clear();
-            Console.WriteLine("Indeed scraper results");
+            Console.WriteLine("Indeed scraper resultaat");
             Console.WriteLine("-------------------------------------------------------");
             Console.WriteLine();
 
