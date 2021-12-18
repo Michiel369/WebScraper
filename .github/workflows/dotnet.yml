@@ -15,3 +15,6 @@ jobs:
         
     - name: Restore dependencies
       run: dotnet restore      
+
+    - name: publish
+      run: dotnet publish -r win-x64 Release /p:PublishSingleFile=true
