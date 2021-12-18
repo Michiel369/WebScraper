@@ -17,11 +17,7 @@ namespace caseStudieWebScraper.scrapers
             string waar = "België";
             int aantalJobs = 0;
 
-            // Chrome driver 96
-            driver = new ChromeDriver("../../../Drivers");
-
-            // own driver in bin map
-            /* driver = new ChromeDriver(); */
+            driver = new ChromeDriver();
 
             driver.Navigate().GoToUrl("https://be.indeed.com/");
             Thread.Sleep(200);
