@@ -17,4 +17,4 @@ jobs:
       run: dotnet restore      
 
     - name: publish
-      run: dotnet publish Release /p:PublishSingleFile=true
+      run: dotnet publish -r win-x64 Release -c /p:PublishSingleFile=true
