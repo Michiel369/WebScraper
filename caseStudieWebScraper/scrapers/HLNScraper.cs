@@ -13,7 +13,7 @@ namespace caseStudieWebScraper.scrapers
         public static void Scrape(string zoekTerm, HashSet<hln> Hln, YoutubeRepository youtubeRepository)
         {
             string zoekterm = zoekTerm;
-            driver = new ChromeDriver();
+            driver = new ChromeDriver("../../../Drivers");
             driver.Navigate().GoToUrl("https://www.hln.be/");
             Thread.Sleep(2000);
 

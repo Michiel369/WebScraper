@@ -14,7 +14,7 @@ namespace caseStudieWebScraper.scrapers
         public static void Scrape(string zoekWoord, HashSet<YT> YTVideos, YoutubeRepository youtubeRepository)
         {
             
-            driver = new ChromeDriver();
+            driver = new ChromeDriver("../../../Drivers");
             driver.Navigate().GoToUrl("https://www.youtube.com/");
 
             var popup = driver.FindElement(By.XPath("//*[@id=\"content\"]/div[2]/div[5]/div[2]/ytd-button-renderer[2]/a"));
