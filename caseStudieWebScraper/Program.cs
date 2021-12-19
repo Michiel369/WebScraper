@@ -11,11 +11,11 @@ namespace caseStudieWebScraper
     {
         static void Main(string[] args)
         {
-            YoutubeRepository youtubeRepository = new YoutubeRepository();
+            Repository Repository = new Repository();
 
-            HashSet<YT> YTVideos = new HashSet<YT>(youtubeRepository.GetVideos());
-            HashSet<InD> InDeed = new HashSet<InD>(youtubeRepository.GetVac());
-            HashSet<hln> Hln = new HashSet<hln>(youtubeRepository.GetArtikels());
+            HashSet<YT> YTVideos = new HashSet<YT>(Repository.GetVideos());
+            HashSet<InD> InDeed = new HashSet<InD>(Repository.GetVac());
+            HashSet<hln> Hln = new HashSet<hln>(Repository.GetArtikels());
             do
             {
                 IntroPage.Print();
@@ -25,7 +25,7 @@ namespace caseStudieWebScraper
                 {
                     youtube.Print();
                     string zoekWoord = Console.ReadLine();
-                    youtubeScraper.Scrape(zoekWoord, YTVideos, youtubeRepository);
+                    youtubeScraper.Scrape(zoekWoord, YTVideos, Repository);
                     youtubeResult.Print(YTVideos);
                     Console.ReadLine();
                 }
@@ -39,7 +39,7 @@ namespace caseStudieWebScraper
                     RemoveYT.Print(YTVideos);
                     string RTitel = Console.ReadLine();
                     YTVideos.RemoveWhere(x => x.Title == RTitel);
-                    youtubeRepository.DeleteYT(RTitel);
+                    Repository.DeleteYT(RTitel);
                 }
 
 
@@ -47,7 +47,7 @@ namespace caseStudieWebScraper
                 {
                     indeed.Print();
                     string what = Console.ReadLine();
-                    IndeedScraper.Scrape(what, InDeed, youtubeRepository);
+                    IndeedScraper.Scrape(what, InDeed, Repository);
                     indeedResult.Print(InDeed);
                     Console.ReadLine();
                 }
@@ -61,7 +61,7 @@ namespace caseStudieWebScraper
                     RemoveIndeed.Print(InDeed);
                     string Rindeed = Console.ReadLine();
                     InDeed.RemoveWhere(x => x.JobTitle == Rindeed);
-                    youtubeRepository.DeleteIndeed(Rindeed);
+                    Repository.DeleteIndeed(Rindeed);
                 }
 
 
@@ -69,7 +69,7 @@ namespace caseStudieWebScraper
                 {
                     HLN.Print();
                     string zoekTerm = Console.ReadLine();
-                    HLNScraper.Scrape(zoekTerm, Hln, youtubeRepository);
+                    HLNScraper.Scrape(zoekTerm, Hln, Repository);
                     HLNResult.Print(Hln);
                     Console.ReadLine();
                 }
@@ -83,7 +83,7 @@ namespace caseStudieWebScraper
                     RemoveHLN.Print(Hln);
                     string Rhln = Console.ReadLine();
                     Hln.RemoveWhere(x => x.Naam == Rhln);
-                    youtubeRepository.DeleteHln(Rhln);
+                    Repository.DeleteHln(Rhln);
                 }
 
 

@@ -11,7 +11,7 @@ namespace caseStudieWebScraper.scrapers
     class IndeedScraper
     {
         private static IWebDriver driver;
-        public static void Scrape(string what, HashSet<InD> InDeed, YoutubeRepository youtubeRepository)
+        public static void Scrape(string what, HashSet<InD> InDeed, Repository Repository)
         {
             string wat = what;
             string waar = "België";
@@ -109,7 +109,7 @@ namespace caseStudieWebScraper.scrapers
             {
                 InD vacature = new InD { JobTitle = jobTitles[i], Company = companys[i], Location = locations[i], Href = hrefs[i] };
                 InDeed.Add(vacature);
-                youtubeRepository.InsertIndeed(vacature);
+                Repository.InsertIndeed(vacature);
             }
 
             driver.Close();

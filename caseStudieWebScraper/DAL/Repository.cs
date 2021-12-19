@@ -4,9 +4,9 @@ using caseStudieWebScraper.Models;
 
 namespace caseStudieWebScraper.DAL
 {
-    class YoutubeRepository : SqlLiteBase
+    class Repository : SqlLiteBase
     {
-        public YoutubeRepository()
+        public Repository()
         {
 
             if (!DatabaseExists())

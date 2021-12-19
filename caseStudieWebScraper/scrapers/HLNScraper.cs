@@ -10,7 +10,7 @@ namespace caseStudieWebScraper.scrapers
     class HLNScraper
     {
         private static IWebDriver driver;
-        public static void Scrape(string zoekTerm, HashSet<hln> Hln, YoutubeRepository youtubeRepository)
+        public static void Scrape(string zoekTerm, HashSet<hln> Hln, Repository Repository)
         {
             string zoekterm = zoekTerm;
 
@@ -70,7 +70,7 @@ namespace caseStudieWebScraper.scrapers
             {
                 hln artikel = new hln { Naam = namen[i], Plaats = plaatsen[i], Beschrijving = beschrijvingen[i], ALink = aLinks[i] };
                 Hln.Add(artikel);
-                youtubeRepository.InsertHLN(artikel);
+                Repository.InsertHLN(artikel);
             }
 
             driver.Close();

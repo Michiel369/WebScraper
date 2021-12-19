@@ -11,7 +11,7 @@ namespace caseStudieWebScraper.scrapers
     {
         private static IWebDriver driver;
 
-        public static void Scrape(string zoekWoord, HashSet<YT> YTVideos, YoutubeRepository youtubeRepository)
+        public static void Scrape(string zoekWoord, HashSet<YT> YTVideos, Repository Repository)
         {
             driver = new ChromeDriver("../../../Driver");
 
@@ -76,7 +76,7 @@ namespace caseStudieWebScraper.scrapers
             {
                 YT video = new YT { Title = titles[i], Uploader = uploaders[i], View = views[i], Link = links[i] };
                 YTVideos.Add(video);
-                youtubeRepository.InsertYT(video);
+                Repository.InsertYT(video);
             }
 
             driver.Close();
