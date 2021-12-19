@@ -48,7 +48,6 @@ namespace caseStudieWebScraper.scrapers
                 }
 
                 // video uploaders
-                //var uploader = videos[i].FindElements(By.Id("text"));
                 var uploader = videos[i].FindElements(By.CssSelector("#channel-info"));
                 foreach (var item in uploader)
                 {
