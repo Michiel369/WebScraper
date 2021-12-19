@@ -13,7 +13,7 @@ namespace caseStudieWebScraper.scrapers
 
         public static void Scrape(string zoekWoord, HashSet<YT> YTVideos, YoutubeRepository youtubeRepository)
         {
-            driver = new ChromeDriver();
+            driver = new ChromeDriver("../../../Driver");
 
             driver.Navigate().GoToUrl("https://www.youtube.com/");
 

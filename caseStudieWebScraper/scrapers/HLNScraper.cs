@@ -14,7 +14,7 @@ namespace caseStudieWebScraper.scrapers
         {
             string zoekterm = zoekTerm;
 
-            driver = new ChromeDriver();
+            driver = new ChromeDriver("../../../Driver");
 
             driver.Navigate().GoToUrl("https://www.hln.be/");
             Thread.Sleep(2000);
